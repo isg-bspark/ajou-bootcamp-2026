@@ -1,0 +1,11 @@
+{
+  "name": "Claude Code Workshop",
+
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+
+  "secrets": {
+    "ANTHROPIC_API_KEY": {
+      "description": "Anthropic API Key for Claude Code"
+    }
+  }
+}
