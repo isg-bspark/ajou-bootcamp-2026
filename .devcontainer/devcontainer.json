@@ -1,11 +1,22 @@
 {
-  "name": "Claude Code Workshop",
+  "name": "Single Cell AI Workshop",
 
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
 
   "secrets": {
     "ANTHROPIC_API_KEY": {
-      "description": "Anthropic API Key for Claude Code"
+      "description": "Anthropic Console에서 발급한 API Key를 입력하세요."
+    }
+  },
+
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
     }
   }
 }
